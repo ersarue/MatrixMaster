@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JQuery Crash Course</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <style>
+    body {
+      font-size: 17px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f4f4;
+      line-height: 1.5em;
+    }
+
+    header {
+      background: #333333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      border-bottom: 4px black solid;
+      /* margin-bottom: 10px; */
+    }
+
+    #container {
+      width: 80%;
+      margin: auto;
+      /* padding: 10px; */
+    }
+
+    .myClass {
+      color: blue;
+      background: orange;
+    }
+
+    #box {
+      background: #333333;
+      color: #f4f4f4;
+      width: 500px;
+      height: 90px;
+      padding: 40px;
+      text-align: center;
+    }
+
+    #box2 {
+      background: red;
+      width: 100px;
+      height: 100px;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>JQuery Crash Course - Effects & Animations</h1>
+  </header>
+  <div id="container">
+    <button id="fadeOut">Fade Out</button>
+    <button id="fadeIn">Fade In</button>
+    <button id="fadeTog">Fade Toggle</button>
+    <div id="slide">
+      <button id="slideUp">Slide Up</button>
+      <button id="slideDown">Slide Down</button>
+      <button id="slideTog">Slide Toggle</button>
+    </div>
+    <div id="box">
+      <h1>Hello World</h1>
+    </div>
+    <div id="bottom">
+      <button id="moveLeft">Move Left</button>
+      <button id="moveRight">Move Right</button>
+      <button id="moveAround">Move Around</button>
+      <div id="box2"></div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      // Fade
+
+      $('#fadeOut').click(function () {
+        // $('#box').fadeOut('slow')
+        $('#box').fadeOut(1000, function () {
+          $('#fadeOut').text('It\'s done')
+        });
+      })
+      $('#fadeIn').click(function () {
+        $('#box').fadeIn(1000, function () {
+          $('#fadeIn').text('It\'s back')
+        });
+      })
+      $('#fadeTog').click(function () {
+        $('#box').fadeToggle(1000);
+      })
+
+      // Slide
+
+      $('#slideUp').click(function () {
+        $('#box').slideUp(5000);
+        $('#slideTog').after('<button>');
+        $('div#slide button:last').text('Stop');
+        $('div#slide button:last').css({ background: 'red', fontSize: '20px', marginLeft: '20px' });
+        $('div#slide button:last').click(function () {
+          $('#box').stop();
+        })
+      })
+      $('#slideDown').click(function () {
+        $('#box').slideDown(3000);
+      })
+      $('#slideTog').click(function () {
+        $('#box').slideToggle(1000);
+      })
+
+      // Animation
+
+      $('#moveRight').click(function
+        () {
+        $('#box2').animate({
+          left: 500,
+          height: 300,
+          width: 300,
+          opacity: 0.5
+        })
+      })
+      $('#moveLeft').click(function
+        () {
+        $('#box2').animate({
+          left: '0px',
+          height: '100px',
+          width: '100px',
+          opacity: '1'
+        })
+      })
+      $('#moveAround').click(function () {
+        let box = $('#box2');
+        box.animate({
+          left: 300
+        })
+        box.animate({
+          top: 300
+        })
+        box.animate({
+          top: 300,
+          left: 0
+        })
+        box.animate({
+          left: 0,
+          top: 0
+        })
+      })
+    })
+  </script>
+</body>
+
+</html>

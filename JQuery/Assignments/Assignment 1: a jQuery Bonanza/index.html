@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Bonanza</title>
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <style>
+    button {
+      margin: 40px;
+      position: relative;
+    }
+
+    .box {
+      width: 100px;
+      height: 50px;
+      background-color: gray;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="hideShow">
+      <button class="btn btn-danger hide">Hide the content</button>
+      <button class="btn btn-success show">Show the content</button>
+    </div>
+    <hr>
+    <div class="animate">
+      <button class="btn btn-info">Animate</button>
+    </div>
+    <div class="faded">
+      <button class="btn btn-info fadeIn">Fade In</button>
+      <button class="btn btn-info fadeOut">Fade Out</button>
+    </div>
+    <div class="slide">
+      <div class="box"></div>
+      <button class="btn btn-info slideUp">Slide Up</button>
+      <button class="btn btn-info slideDown">Slide Down</button>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $('.hide').click(function () {
+        $('.animate').hide()
+        $('.fadeIn').hide()
+        $('.fadeOut').hide()
+        $('.slideDown').hide()
+        $('.slideUp').hide()
+      })
+      $('.show').click(function () {
+        $('.animate').show()
+        $('.fadeIn').show()
+        $('.fadeOut').show()
+        $('.slideDown').show()
+        $('.slideUp').show()
+      })
+      $('.animate').click(function () {
+        $('.fadeIn').animate({
+          left: 300,
+          width: 150,
+        })
+        $('.fadeIn').animate({
+          left: 300,
+          top: 100,
+        })
+        $('.fadeIn').animate({
+          top: 100,
+          left: 0,
+        })
+        $('.fadeIn').animate({
+          top: 0,
+          left: 0,
+        })
+        $('.fadeOut').animate({
+          right: 300,
+          width: 150,
+        })
+        $('.fadeOut').animate({
+          right: 300,
+          top: 100,
+        })
+        $('.fadeOut').animate({
+          top: 100,
+          right: 0,
+        })
+        $('.fadeOut').animate({
+          top: 0,
+          right: 0,
+        })
+      })
+      $('.slideUp').click(function () {
+        $('.box').slideUp(3000);
+      })
+      $('.slideDown').click(function () {
+        $('.box').slideDown(3000);
+      })
+    })
+  </script>
+</body>
+
+</html>
