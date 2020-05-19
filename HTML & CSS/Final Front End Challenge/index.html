@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="head-container">
+    <header class="header">
+      <img src="images/facebbok-logo.png" alt="facebook-logo">
+      <div class="log-in">
+        <table class="log-in">
+          <tbody>
+            <tr>
+              <td>
+                <label for="email">Email</label>
+              </td>
+              <td>
+                <label for="password">Password</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="email" name="email" id="email">
+              </td>
+              <td>
+                <input type="password" name="password" id="password">
+              </td>
+              <td>
+                <button id="login-btn" type="submit">Log In</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </header>
+  </div>
+  <div class="main-container">
+    <div class="left-section">
+      <p>Facebook helps you connect and share with the people in your life.</p>
+      <img src="https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yi/r/OBaVg52wtTZ.png" alt="connecting people">
+    </div>
+    <div class="right-section">
+      <div class="right-top-text">
+        <h3><a href="#">Sign Up</a></h3>
+        <p>It's free and always will be.</p>
+      </div>
+      <!-- <form class="sign-up">
+        <label>First Name: </label>
+        <input type="text" name="name">
+        <label>Last Name: </label>
+        <input type="text" name="last-name">
+        <label>Your Email: </label>
+        <input type="email" name="email">
+        <label>Re-enter Email: </label>
+        <input type="email" name="email">
+        <label>New Password: </label>
+        <input type="password" name="password">
+        <label>I am: </label>
+        <select name="gender">
+          <option value="sex">Select Sex</option>
+        </select>
+        <label>Birthday: </label>
+        <div class="bday">
+          <select name="bday-month">
+            <option value="month">Month</option>
+          </select>
+          <select name="bday-day">
+            <option value="day">Day</option>
+          </select>
+          <select name="bday-year">
+            <option value="year">Year</option>
+          </select>
+        </div>
+        <p><a href="#">Why do I need to provide my birthday?</a></p>
+        <br>
+        <p>By clicking Sign Up, you agree to our <a href="#">Terms</a> and that you have read and understand our <a
+            href="#">Data Use Policy.</a></p>
+        <button class="sign-up" type="submit">Sign Up</button>
+      </form> -->
+      <table id="sign-up">
+        <tbody>
+          <tr>
+            <td><label>First Name: </label>
+            </td>
+            <td><input type="text" name="name">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Last Name: </label></td>
+            <td><input type="text" name="last-name"></td>
+          </tr>
+          <tr>
+            <td><label>Your Email: </label></td>
+            <td><input type="email" name="email"></td>
+          </tr>
+          <tr>
+            <td><label>Re-enter Email: </label></td>
+            <td><input type="email" name="email"></td>
+          </tr>
+          <tr>
+            <td><label>New Password: </label></td>
+            <td><input type="password" name="password"></td>
+          </tr>
+          <tr>
+            <td><label>I am: </label></td>
+            <td>
+              <select id="gender" name="gender">
+                <option value="sex">Select Sex</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Birthday: </label></td>
+            <td>
+              <div id="bDay">
+                <select name="bday-month">
+                  <option value="month">Month</option>
+                </select>
+                <select name="bday-day">
+                  <option value="day">Day</option>
+                </select>
+                <select name="bday-year">
+                  <option value="year">Year</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <div class="agreement">
+        <p><a href="#">Why do I need to provide my birthday?</a></p>
+        <br>
+        <p>By clicking Sign Up, you agree to our <a href="#">Terms</a> and that you have read and understand our <a
+            href="#">Data Use Policy.</a>
+        </p>
+        <br>
+        <button class="sign-up-btn" type="submit">Sign Up</button>
+      </div>
+      <div class="right-bottom-text">
+        <p><a href="#">Create a Page</a> for a celebrity, band or business.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-container">
+    <footer>
+      <div class="footer-top">
+        <p class="languages">
+          <a href="#">English (US)</a>
+          <a href="#">Español</a>
+          <a href="#">Português (Brasil)</a>
+          <a href="#">Français (France)</a>
+          <a href="#">Deutsch</a>
+          <a href="#">Italiano</a>
+          <a href="#">العربية</a>
+          <a href="#">नेपाली</a>
+          <a href="#">中文(简体)</a>
+          <a href="#">日本語(関西)</a>
+          <a href="#">...</a>
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-left">Facebook &copy; 2012 ∙ <a href="#">English (US)</a></p>
+        <p class="footer-right">
+          <a href="#">Mobile ∙ </a>
+          <a href="#">Find Friends ∙ </a>
+          <a href="#">Badges ∙ </a>
+          <a href="#">People ∙ </a>
+          <a href="#">Pages ∙ </a>
+          <a href="#">About ∙ </a>
+          <a href="#">Advertising ∙ </a>
+          <a href="#">Create a Page ∙ </a>
+          <a href="#">Developers ∙ </a>
+          <a href="#">Careers ∙ </a>
+          <a href="#">Privacy ∙ </a>
+          <a href="#">Terms ∙ </a>
+          <a href="#">Help ∙ </a>
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

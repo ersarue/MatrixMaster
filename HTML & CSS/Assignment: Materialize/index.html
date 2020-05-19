@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materialize Landing Page</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../Assignment: Materialize/css/style.css">
+</head>
+
+<body>
+  <nav class="red" style="padding:0px 10px;">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Tech Blog</a>
+      <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down ">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Links</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="sidenav" id="mobile-nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Links</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <div class="container">
+    <h1>My Landing Page</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero minima, quaerat accusantium aspernatur id odit
+      dolor perferendis repellat iusto molestiae ab temporibus fugit nihil officiis sunt modi ipsum rem? <em>Commodi
+        quidem
+        earum, porro asperiores doloribus dolore modi possimus quam enim ullam aperiam quod velit, aliquid, placeat
+        recusandae id laborum minima!</em>
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum iste nihil deserunt. Voluptate adipisci nesciunt
+      libero eligendi dolorem repellat voluptatum accusantium corrupti pariatur debitis. Esse at odio doloremque dolorem
+      laudantium!</p>
+  </div>
+  <div class="footer">
+    <footer>
+      <div class="footer-top">
+        <ul>
+          <li><a href="#">Link1</a></li>
+          <li><a href="#">Link2</a></li>
+          <li><a href="#">Link3</a></li>
+          <li><a href="#">Link4</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2020. Materialize Landing Page</p>
+      </div>
+    </footer>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
+  </script>
+</body>
+
+</html>

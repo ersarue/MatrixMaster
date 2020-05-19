@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar-expand-lg {
+  height: 100px;
+  font-size: 2rem;
+}
+.container {
+  text-align: justify;
+  background-image: url('../images/mac3.jpg');
+  background-size: cover;
+  line-height: 1.6em;
+  margin-top: 100px;
+}
+.jumbotron p {
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: whitesmoke;
+  font-family: monospace;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  background-color: rgb(57, 60, 66);
+  height: 100px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 10px;
+}
+.footer-top li,
+.footer-bottom p {
+  display: inline-block;
+  margin: 30px;
+}
