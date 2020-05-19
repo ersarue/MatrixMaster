@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Website</title>
+  <style>
+    .navbar {
+      margin-left: 30px;
+      margin-right: 30px;
+      background-color: rgba(79, 76, 250, 0.276);
+    }
+
+    .mainSection {
+      font-size: 24px;
+      font-family: monospace, sans-serif;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    .paragraph {
+      text-align: justify;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .listItem {
+      font-size: 40px;
+      display: flex;
+      justify-content: space-around;
+      border-bottom: solid rgb(65, 62, 241) 10px;
+      padding: 10px;
+      list-style-type: none;
+    }
+
+    .table {
+      border: 1px solid black;
+      margin: auto;
+    }
+
+    .form {
+      display: block;
+      text-align: center;
+      margin: 25px;
+      background-color: goldenrod;
+    }
+
+    span {
+      font-weight: bold;
+      /* background: lightcyan; */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <div>
+    <nav class="navbar">
+      <ul class="listItem">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Cat">About</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Cat#References">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Main section -->
+    <div class="mainSection">
+      <h2>Your Crazy Cat Obsession Makes You Happier And Healthier</h2>
+      <p class="paragraph">
+        Feline fans, rejoice: Your cat isn't just a cute and cuddly ball of
+        fluff -- he's also incredibly good for your health. Even pet owners
+        who prefer puppies can't deny the major benefits that come along with
+        caring for a furry friend of either species. Science shows that pets
+        can help prevent allergies in kids, ward off respiratory infections,
+        improve your mood and even boost self-esteem. Whether you're a crazy
+        cat lady or a dude ready to publicly proclaim your obsession with your
+        feline friend, get ready to celebrate the many pros of being a proud
+        cat owner -- all negative stereotypes aside.
+      </p>
+      <p class="paragraph">
+        <a href="https://edition.cnn.com/2019/08/21/health/crazy-cat-lady-study-scli-intl/index.html">(CNN)</a>
+        — It's the news cat owners have been waiting for: Owning lots of cats
+        does not, in fact, mean you're mad, sad or anxious. That's according
+        to researchers at UCLA, who analyzed more than 500 pet owners and
+        found nothing to support the long-held "crazy cat lady" stereotype.
+        The study, published in the journal Royal Society Open Science,
+        observed how people reacted to distress calls from animals and also
+        compared pet ownership with mental health-related or social
+        difficulties. Its results will come as a relief to those people who,
+        absurdly, prefer cats to dogs -- and should give those who cling to
+        the popular "cat lady" trope paws for thought. "We found no evidence
+        to support the 'cat lady' stereotype: cat-owners did not differ from
+        others on self-reported symptoms of depression, anxiety or their
+        experiences in close relationships," the study said. "Our findings,
+        therefore, do not fit with the notion of cat-owners as more depressed,
+        anxious or alone." The conclusion backs a similar finding by
+        researchers at University College London, who said in 2017 that they
+        found no link between cat ownership and the development of psychotic
+        symptoms.
+      </p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Crazy</th>
+            <th>Cats</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="https://media.giphy.com/media/dy3boQMu8RQ6Z9eWBd/giphy.gif" alt="cat1" height="200"
+                width="200" />
+            </td>
+            <td>
+              <img src="https://media.giphy.com/media/MBx0E39md9tEFcpT9D/giphy.gif" alt="cat1" height="200"
+                width="200" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <form class="form" action="test.php" method="POST">
+        Request your crazy cat via the form below:
+        <br />
+        <label><span>Your Name:</span></label>
+        <input type="text" name="name" />
+        <label><span>Email:</span></label>
+        <input type="email" name="email" />
+        <br />
+        <label><span>Specie:</span></label>
+        <select name="specie">
+          <option value="">---</option>
+          <option value="British">British</option>
+          <option value="Persian">Persian</option>
+          <option value="Scottish">Scottish</option>
+        </select>
+        <label><span>Color:</span></label>
+        <input type="checkbox" name="yellow" />
+        <label>Yellow</label>
+        <input type="checkbox" name="brown" />
+        <label>Brown</label>
+        <input type="checkbox" name="black" />
+        <label>Black</label>
+        <br />
+        <label><span>Keyword:</span></label>
+        <input type="text" name="keyword" placeholder="Clever, Precise, Energetic" />
+        <label>Sex:</label>
+        <input type="radio" name="sex" />
+        <label>Male</label>
+        <input type="radio" name="sex" />
+        <label>Female</label>
+        <br />
+        <input type="submit" name="submit" value="Submit" />
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

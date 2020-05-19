@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 1000px;
+}
+.header {
+  display: inline-block;
+}
+.navbar {
+  width: 18%;
+}
