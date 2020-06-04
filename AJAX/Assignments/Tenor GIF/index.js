@@ -22,11 +22,9 @@ function getGifs(searchInput, gifCount) {
     .catch((error) => {
       let errorMessage = createAndAppend('h4', content);
       errorMessage.innerText =
-        'An error has occurred while processing your request. Please try again';
+        'An error has occurred while processing your request from the server. Please try again';
     });
 }
-// const btn = document.querySelector('#btn');
-// btn.addEventListener('click', function () {
 
 $('#btn').click(function () {
   let input = document.querySelector('input').value;
